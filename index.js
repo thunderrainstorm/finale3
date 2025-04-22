@@ -36,7 +36,7 @@ app.post("/start-conference", async (req, res) => {
     // Call all numbers (emergency contacts and user) at once
     const calls = await Promise.all(allNumbers.map(number => 
       client.calls.create({
-        url: "https://handler.twilio.com/twiml/EH96aeff33652b8b2fdd56abccfdb6e727",
+        url: "https://handler.twilio.com/twiml/EHdefcb7c27a599935719536f03c37bb94",
         to: number,
         from: process.env.TWILIO_NUMBER
       })
